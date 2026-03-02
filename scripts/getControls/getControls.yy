@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"getControls",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"getControls",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

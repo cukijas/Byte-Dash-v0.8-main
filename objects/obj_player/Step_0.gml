@@ -1,4 +1,5 @@
 if sprite_index == spr_player_death {
+	audio_play_sound(electric_explosion, 1, false);
 
 	var _lastFrame = sprite_get_number(sprite_index) -1;
 	if image_index >= _lastFrame {
@@ -165,6 +166,7 @@ if place_meeting(x+xspd,y,obj_damage_player){
 		damageTimer = damageCooldown;
 		damager = _instance;
 		if damager.x <= x {dirDamage = 1}else {dirDamage = -1};	
+		audio_play_sound(prota_dmg, 1, false);
 		show_debug_message("vida actual: "+string(hp))
 	}
 	

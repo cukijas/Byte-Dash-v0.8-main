@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Functions","folderPath":"folders/Functions.yy","name":"Functions","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"dmg","folderPath":"folders/Objects/dmg.yy","name":"dmg","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Objects/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -109,6 +110,10 @@
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"getControls","path":"scripts/getControls/getControls.yy",},},
+    {"id":{"name":"electric_explosion","path":"sounds/electric_explosion/electric_explosion.yy",},},
+    {"id":{"name":"music_level","path":"sounds/music_level/music_level.yy",},},
+    {"id":{"name":"prota_dmg","path":"sounds/prota_dmg/prota_dmg.yy",},},
+    {"id":{"name":"sword_slice","path":"sounds/sword_slice/sword_slice.yy",},},
     {"id":{"name":"spr_attack_miner","path":"sprites/spr_attack_miner/spr_attack_miner.yy",},},
     {"id":{"name":"spr_attack_mwormy","path":"sprites/spr_attack_mwormy/spr_attack_mwormy.yy",},},
     {"id":{"name":"spr_attack_spydrone","path":"sprites/spr_attack_spydrone/spr_attack_spydrone.yy",},},

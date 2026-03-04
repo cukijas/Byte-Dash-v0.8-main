@@ -1,4 +1,5 @@
 global.dialogo_activo = true;
+alarma_activa=false;
 // 1. Configuraciones visuales básicas
 padding = 20; // Espacio de borde
 text_x = padding;

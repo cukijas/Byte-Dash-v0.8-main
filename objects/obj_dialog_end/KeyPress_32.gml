@@ -33,6 +33,8 @@ else {
                 // Línea 2: Troj se ríe y se burla. Podríamos ponerlo a caminar o amenazar.
                 // Asegúrate de tener un spr_trojan_walk o el que prefieras usar aquí.
                 obj_trojan.sprite_index = spr_attack_trojan;
+				alarma_activa = true;
+				audio_play_sound(alarm_sound, 1, true);
                 break;
                 
             case 4:

@@ -50,6 +50,7 @@
   },
   "name":"Byte & Dash v0.8",
   "resources":[
+    {"id":{"name":"fnt_dialog","path":"fonts/fnt_dialog/fnt_dialog.yy",},},
     {"id":{"name":"fnt_texto","path":"fonts/fnt_texto/fnt_texto.yy",},},
     {"id":{"name":"obj_background_city","path":"objects/obj_background_city/obj_background_city.yy",},},
     {"id":{"name":"obj_basic_attack","path":"objects/obj_basic_attack/obj_basic_attack.yy",},},
@@ -58,6 +59,7 @@
     {"id":{"name":"obj_damage_enemy","path":"objects/obj_damage_enemy/obj_damage_enemy.yy",},},
     {"id":{"name":"obj_damage_parent","path":"objects/obj_damage_parent/obj_damage_parent.yy",},},
     {"id":{"name":"obj_damage_player","path":"objects/obj_damage_player/obj_damage_player.yy",},},
+    {"id":{"name":"obj_dialog_end","path":"objects/obj_dialog_end/obj_dialog_end.yy",},},
     {"id":{"name":"obj_enemy_still","path":"objects/obj_enemy_still/obj_enemy_still.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_fire_brick","path":"objects/obj_fire_brick/obj_fire_brick.yy",},},
@@ -103,6 +105,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_semi_solid_wall","path":"objects/obj_semi_solid_wall/obj_semi_solid_wall.yy",},},
     {"id":{"name":"obj_spydrone","path":"objects/obj_spydrone/obj_spydrone.yy",},},
+    {"id":{"name":"obj_trigger_dialog","path":"objects/obj_trigger_dialog/obj_trigger_dialog.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_wormy_shot","path":"objects/obj_wormy_shot/obj_wormy_shot.yy",},},
     {"id":{"name":"obj_wormy","path":"objects/obj_wormy/obj_wormy.yy",},},

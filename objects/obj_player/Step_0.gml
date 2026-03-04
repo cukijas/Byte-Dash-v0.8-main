@@ -12,6 +12,22 @@ var alphaToDraw = 1; // ← NUEVA VARIABLE PARA MANEJAR EL TITILEO
 //inputs
 getControls();
 
+if (variable_global_exists("dialogo_activo") && global.dialogo_activo == true) {
+    // Forzamos todas las variables de input a 0 (falso)
+    rightKey = 0;
+    leftKey = 0;
+    downKey = 0;
+    jumpKey = 0;
+    jumpKeyBuffered = 0;
+    jumpKeyPressed = 0;
+    attackKey = 0;
+    dashKey = 0;
+    brickKey = 0;
+    
+    // Opcional: Detenemos cualquier impulso restante (como el dash o el knockback de daño)
+    xspd = 0;
+}
+
 
 #region colision plataformas moviles solidas
 //Mover al jugador al entrar en contacto con plataformas solidas

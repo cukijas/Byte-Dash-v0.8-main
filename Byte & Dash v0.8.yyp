@@ -111,6 +111,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_wormy_shot","path":"objects/obj_wormy_shot/obj_wormy_shot.yy",},},
     {"id":{"name":"obj_wormy","path":"objects/obj_wormy/obj_wormy.yy",},},
+    {"id":{"name":"config","path":"rooms/config/config.yy",},},
     {"id":{"name":"innit","path":"rooms/innit/innit.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -209,6 +210,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_wormy_shot","path":"sprites/spr_wormy_shot/spr_wormy_shot.yy",},},
     {"id":{"name":"Sprite87","path":"sprites/Sprite87/Sprite87.yy",},},
+    {"id":{"name":"Sprite91","path":"sprites/Sprite91/Sprite91.yy",},},
     {"id":{"name":"TestEnemy","path":"sprites/TestEnemy/TestEnemy.yy",},},
     {"id":{"name":"TileSet","path":"tilesets/TileSet/TileSet.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
@@ -222,6 +224,7 @@
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"innit","path":"rooms/innit/innit.yy",},},
+    {"roomId":{"name":"config","path":"rooms/config/config.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

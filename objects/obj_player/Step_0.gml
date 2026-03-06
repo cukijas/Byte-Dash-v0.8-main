@@ -1,11 +1,17 @@
-if sprite_index == spr_player_death {
-	audio_play_sound(electric_explosion, 1, false);
+if (sprite_index == spr_player_death) {
+    // 1. Evitar que el sonido se sature (que suene solo una vez)
+   // Control de sonido para que no sature
+    if (!audio_is_playing(electric_explosion)) {
+        audio_play_sound(electric_explosion, 1, false);
+    }
 
-	var _lastFrame = sprite_get_number(sprite_index) -1;
-	if image_index >= _lastFrame {
-		room_restart();
-	}	
-};
+    var _lastFrame = sprite_get_number(sprite_index) - 1;
+    
+    var _lastFrame = sprite_get_number(sprite_index) - 1;
+    if (image_index >= _lastFrame) {
+        respawn_player(); // Llamamos a la misma función
+    }
+}
 
 
 var alphaToDraw = 1; // ← NUEVA VARIABLE PARA MANEJAR EL TITILEO
@@ -522,14 +528,15 @@ if instance_exists(myFloorPlat)
 }
 
 
+
+//evento firebrick
 if brickKey && !instance_exists(obj_fire_brick){
-	
+	audio_play_sound(SpaceGunFire, 1.0, false);
 	var _fireBrick = instance_create_depth(x+16*face,bbox_bottom,depth+1, obj_fire_brick);
 	
 
 };
 freezeShot();
-
 
 
 
@@ -580,4 +587,37 @@ if hp <= 0 {
 	mask_index = maskSpr;
 	//menos al momento de agacharse, esta mask tiene la mitad de altura pero lo mismo de ancho que el mask normal
 	if crouching {mask_index = crouchSpr;};
+}
+
+
+// --- Detección de caída ---
+if (y > room_height + 64) {
+    respawn_player();
+}
+
+// --- Tu código de muerte corregido ---
+// --- Detección de caída ---
+// Si la posición Y supera la altura de la sala (+ un margen para que caiga del todo)
+// --- Detección de caída ---
+if (y > room_height + 64) {
+    var _snd = audio_play_sound(snd_fall, 10, false);
+    
+    // Cambia el tono aleatoriamente entre 0.8 y 1.2
+    audio_sound_pitch(_snd, random_range(0.8, 1.2)); 
+    
+    respawn_player();
+}
+
+// --- Tu lógica de muerte ya existente ---
+// Si cae al vacío
+if (y > room_height + 100) {
+    respawn_player();
+}
+
+// Si termina la animación de muerte
+if (sprite_index == deathSpr) {
+    var _lastFrame = sprite_get_number(sprite_index) - 1;
+    if (image_index >= _lastFrame) {
+        respawn_player(); 
+    }   
 }

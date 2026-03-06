@@ -1,19 +1,12 @@
-if dest {destroyBrick()}
+event_inherited();
 
-if place_meeting(x,y,obj_damage_player){
-	dest = true
+// Lógica de contador
+brickTimer += 1;
+
+// Cálculo total
+var totalDuration = Fase1Length + Fase2Length + Fase3Length + Fase4Length + Fase5Length;
+
+// Verificación de destrucción
+if (brickTimer >= totalDuration) {
+    destroyBrick();
 }
-
-
-if brickTimer >= Fase1Length && brickTimer <= Fase2Length{
-	image_index = 1;
-}else if brickTimer >= Fase2Length && brickTimer <= Fase3Length{
-	image_index = 2;
-	
-	
-	
-}else if brickTimer > Fase3Length {
-	destroyBrick();
-}
-
-brickTimer++;

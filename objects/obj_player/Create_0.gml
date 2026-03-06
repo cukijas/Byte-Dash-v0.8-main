@@ -122,8 +122,10 @@ vidas = 10; // vidas actuales (por ahora 10)
 vidas_max = 10; // hud automatico?
 parpadeoTimer = 0;
 
+//evento disparo congelante
 function freezeShot() {
 	if fsKey && !instance_exists(obj_freeze_shot){
+		//audio_play_sound(SmoothLaserAttack, 1.0, false);
 		var _freezeShot = instance_create_depth(x,bbox_top - middle,depth+31, obj_freeze_shot);
 		_freezeShot.image_angle = point_direction(0,0,face,0);
 		_freezeShot.dir = face;
